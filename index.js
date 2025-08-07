@@ -5,8 +5,8 @@ const axios = require("axios");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const API_KEY = "VOTRE_CLE_API_GOOGLE_ICI";
-const CHANNEL_ID = "UClBW0m5JmPbQZPLyl2vmqBA";
+const API_KEY = process.env.API_KEY;
+const CHANNEL_ID = process.env.CHANNEL_ID;
 
 app.get("/lastshort.png", async (req, res) => {
     try {
