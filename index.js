@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require("express");
 const { createCanvas, loadImage } = require("canvas");
 const axios = require("axios");
